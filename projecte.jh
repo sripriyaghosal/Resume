@@ -1,0 +1,21 @@
+
+application {
+  config {
+    baseName Elastickingdom,
+    applicationType monolith,
+    packageName com.elastickingdom,
+    authenticationType jwt,
+    prodDatabaseType postgresql,
+    clientFramework React
+  }
+  entities *
+}
+
+entity A {}
+
+entity B {}
+
+relationship ManyToMany {
+  Foo to Bar
+}
+    
